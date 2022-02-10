@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Большое баскетбольное мероприятие в Москве</title>
+    <link rel="stylesheet" href="index.css" />
+    <script
+      src="https://api-maps.yandex.ru/2.1/?apikey=0d88ba2f-320c-493d-a114-0d5fcc2128da&lang=ru_RU"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-blackout">
+        <h1 class="header-title container">
+          Встреча со сборной России по баскетболу
+        </h1>
+        <p class="header-text container">
+          В 16:00 по Московскому времени произойдет товарищеский матч Сборной
+          России по баскетболу против Сборной Польши.После матча у зрителей
+          будет возможность встретиться вживую с игроками сборной и лично у них
+          купить мяч или другую атрибутику для игры в баскетбол.
+        </p>
+        <h2
+          class="header-title container header-free"
+          style="margin: 15px auto; background-color: white; color: red"
+        >
+          ВХОД БЕСПЛАТНЫЙ
+        </h2>
+        <div class="header-map">
+          <h2 class="header-title container">Местоположение:</h2>
+          <p class="header-text container">
+            Большой Козловский пер., 5, стр. 2, Москва
+          </p>
+          <div class="container" id="header-map"></div>
+        </div>
+      </div>
+    </div>
+    <div class="form container">
+      <div class="form-name-lastname">
+        <label for="name">Имя</label>
+        <input type="text" id="name" />
+        <label for="lastname">Фамилия</label>
+        <input type="text" id="lastname" />
+      </div>
+      <label for="email">Почта</label>
+      <input type="email" id="email" />
+      <label for="comment">О себе</label>
+
+      <textarea id="comment"></textarea>
+      <button>Отправить</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
